@@ -4,6 +4,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
 
 public class Prueba extends JFrame {
 
@@ -33,8 +35,13 @@ public class Prueba extends JFrame {
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("LOS JUEGOS DEL CHIPIR\u00D3N");
+		lblNewLabel.setFont(new Font("Yu Gothic UI", Font.BOLD, 24));
+		lblNewLabel.setBounds(56, 10, 370, 48);
+		contentPane.add(lblNewLabel);
 	}
 
 }
