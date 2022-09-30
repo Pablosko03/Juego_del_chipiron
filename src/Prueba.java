@@ -7,6 +7,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Prueba extends JFrame {
 
@@ -44,8 +46,15 @@ public class Prueba extends JFrame {
 		lblNewLabel.setBounds(56, 10, 370, 48);
 		contentPane.add(lblNewLabel);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(179, 176, 85, 21);
-		contentPane.add(btnNewButton);
+		JButton btnInicio = new JButton("Comenzar");
+		btnInicio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Instrucciones f = new Instrucciones();
+				f.setVisible(true);
+			}
+		});
+		btnInicio.setFont(new Font("Arial Black", Font.PLAIN, 20));
+		btnInicio.setBounds(122, 132, 182, 92);
+		contentPane.add(btnInicio);
 	}
 }
