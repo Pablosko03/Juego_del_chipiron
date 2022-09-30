@@ -43,7 +43,7 @@ public class Prueba extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("LOS JUEGOS DEL CHIPIR\u00D3N");
 		lblNewLabel.setFont(new Font("Yu Gothic UI", Font.BOLD, 24));
-		lblNewLabel.setBounds(56, 10, 370, 48);
+		lblNewLabel.setBounds(61, 10, 313, 48);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnInicio = new JButton("Comenzar");
@@ -54,7 +54,7 @@ public class Prueba extends JFrame {
 			}
 		});
 		btnInicio.setFont(new Font("Arial Black", Font.PLAIN, 20));
-		btnInicio.setBounds(122, 132, 182, 92);
+		btnInicio.setBounds(127, 85, 182, 92);
 		contentPane.add(btnInicio);
 	}
 }
