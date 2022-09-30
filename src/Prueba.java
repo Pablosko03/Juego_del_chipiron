@@ -6,6 +6,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import javax.swing.JButton;
 
 public class Prueba extends JFrame {
 
@@ -42,6 +43,9 @@ public class Prueba extends JFrame {
 		lblNewLabel.setFont(new Font("Yu Gothic UI", Font.BOLD, 24));
 		lblNewLabel.setBounds(56, 10, 370, 48);
 		contentPane.add(lblNewLabel);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(179, 176, 85, 21);
+		contentPane.add(btnNewButton);
 	}
-
 }
